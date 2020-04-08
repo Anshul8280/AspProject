@@ -1,0 +1,1 @@
+﻿insert into BusDetails values('154','UP Bus','Vanarasi','Delhi','30');
