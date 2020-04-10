@@ -10,7 +10,7 @@ using System.Configuration;
 
 namespace Online_Bus_Reservation_System
 {
-    public partial class CancelTicket : System.Web.UI.Page
+    public partial class AdminDashboard : System.Web.UI.Page
     {
         SqlDataAdapter sda = new SqlDataAdapter();
         DataSet ds = new DataSet();
@@ -28,22 +28,21 @@ namespace Online_Bus_Reservation_System
                 showData();
             }
         }
+
         public void showData()
         {
-            SqlCommand cmd = new SqlCommand("select * from customer where Email='" + Session["user"] + "'", con);
+            SqlCommand cmd = new SqlCommand("select * from Admin where Adminemail='" + Session["user"] + "'", con);
             cmd.ExecuteNonQuery();
             sda.SelectCommand = cmd;
             sda.Fill(ds);
-            lblName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
-            lblCustomerId.Text = ds.Tables[0].Rows[0]["CustomerId"].ToString();
+            //lblName.Text = ds.Tables[0].Rows[0]["Name"].ToString();
+            lblCustomerId.Text = ds.Tables[0].Rows[0]["AdminId"].ToString();
 
         }
 
-        protected void btnBook_Click(object sender, EventArgs e)
+        protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("delete from TicketDetails where ticketnumber= '"+ txtBusNumber.Text +"'", con);
-            cmd.ExecuteNonQuery();
-            Response.Redirect("Dashboard.aspx");
+            Response.Redirect("AdminProfileupdate.aspx");
         }
 
         protected void btnSignup_Click(object sender, EventArgs e)
@@ -52,9 +51,9 @@ namespace Online_Bus_Reservation_System
             Response.Redirect("index.aspx");
         }
 
-        protected void btnAbout_Click(object sender, EventArgs e)
+        protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AvaliableSeat.aspx");
+            Response.Redirect("Addbus.aspx");
         }
     }
 }

@@ -6,23 +6,41 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace Online_Bus_Reservation_System
 {
     public partial class AdminLogin : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        SqlDataAdapter sda = new SqlDataAdapter();
+        DataSet ds = new DataSet();
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Projectdatabase"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user"] != null)
+            {
+                Response.Redirect("AdminDashboard.aspx");
+            }
+
             con.Open();
         }
 
         protected void btnAdminLogin_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into admin values('"+txtAdminEmail.Text+"','"+pwdAdminPassword.Text+"')",con);
+            string user = txtAdminEmail.Text.Trim();
+            SqlCommand cmd = new SqlCommand("select * from admin where adminemail='" + txtAdminEmail.Text + "' and password ='" + pwdAdminPassword.Text + "'", con);
             cmd.ExecuteNonQuery();
-            con.Close();
-            Label1.Text = "Record Inserted";
+            sda.SelectCommand = cmd;
+            sda.Fill(ds, "details");
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                Session["user"] = user;
+                Response.Redirect("AdminDashboard.aspx");
+            }
+            else
+            {
+
+            }
         }
     }
 }

@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Addbus.aspx" />
+    <Content Include="AdminDashboard.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminProfileupdate.aspx" />
     <Content Include="App_Data\Projectdatabase.mdf" />
     <Content Include="App_Data\Projectdatabase_log.ldf">
       <DependentUpon>Projectdatabase.mdf</DependentUpon>
@@ -90,12 +93,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addbus.aspx.cs">
+      <DependentUpon>Addbus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addbus.aspx.designer.cs">
+      <DependentUpon>Addbus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfileupdate.aspx.cs">
+      <DependentUpon>AdminProfileupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProfileupdate.aspx.designer.cs">
+      <DependentUpon>AdminProfileupdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="AvaliableSeat.aspx.cs">
       <DependentUpon>AvaliableSeat.aspx</DependentUpon>

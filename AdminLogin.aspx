@@ -33,7 +33,6 @@
                         </td>
                         <td>
                             <asp:Label ID="Label1" runat="server"></asp:Label>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [admin]"></asp:SqlDataSource>
                         </td>
                     </tr>
                 </table>

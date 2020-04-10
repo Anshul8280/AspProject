@@ -11,7 +11,7 @@ namespace Online_Bus_Reservation_System
 {
 
 
-    public partial class CancelTicket
+    public partial class AdminProfileupdate
     {
 
         /// <summary>
@@ -51,84 +51,138 @@ namespace Online_Bus_Reservation_System
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// lblName control.
+        /// btnUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.LinkButton btnUpdate;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// btnaddBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.LinkButton btnaddBus;
 
         /// <summary>
-        /// btnAbout control.
+        /// btnAddRoute control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnAbout;
+        protected global::System.Web.UI.WebControls.LinkButton btnAddRoute;
 
         /// <summary>
-        /// btnTourPackages control.
+        /// btnViewCustomer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnTourPackages;
+        protected global::System.Web.UI.WebControls.LinkButton btnViewCustomer;
 
         /// <summary>
-        /// DropDownList2 control.
+        /// btnDeleteBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.LinkButton btnDeleteBus;
 
         /// <summary>
-        /// btnContactUs control.
+        /// btnViewTicket control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnContactUs;
+        protected global::System.Web.UI.WebControls.LinkButton btnViewTicket;
 
         /// <summary>
-        /// btnEnquiry control.
+        /// btnChangePassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnEnquiry;
+        protected global::System.Web.UI.WebControls.LinkButton btnChangePassword;
 
         /// <summary>
-        /// txtBusNumber control.
+        /// btnViewBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBusNumber;
+        protected global::System.Web.UI.WebControls.LinkButton btnViewBus;
 
         /// <summary>
-        /// btnBook control.
+        /// btnViewRoute control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBook;
+        protected global::System.Web.UI.WebControls.LinkButton btnViewRoute;
+
+        /// <summary>
+        /// btnDeleteCustomer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnDeleteCustomer;
+
+        /// <summary>
+        /// btnDeleteRoute control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnDeleteRoute;
+
+        /// <summary>
+        /// btnViewEnquery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnViewEnquery;
+
+        /// <summary>
+        /// txtAdminID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAdminID;
+
+        /// <summary>
+        /// txtEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

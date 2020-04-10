@@ -98,14 +98,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Number of Seats to Book :-</td>
-                    <td>
-                        <asp:TextBox ID="txtSeatNumber" runat="server" Height="16px" Width="270px"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
                     <td colspan="2">
-                        <asp:Button ID="btnBook" runat="server" OnClick="btnBook_Click" Text="Book Ticket" Width="288px" />
+                        <asp:Button ID="btnBook" runat="server" OnClick="btnBook_Click" Text="Cancel Ticket" Width="288px" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
